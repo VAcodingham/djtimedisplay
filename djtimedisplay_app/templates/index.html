@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    {%load static%}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <link rel="stylesheet" type="text/css" href={% static "mystyle.css" %}>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <title>Time Display</title>
-    {%load static%}
+    
 </head>
 <body>
-    <h1 style= color:darkblue>The Current Time and date: {{datetime}}</h1>
-
+    <div class="container">
+    <h1 style= color:darkblue class= "display-1">The Current Time and date: {{datetime}}</h1>
+    </div>
     <p></p>
     
 </body>
